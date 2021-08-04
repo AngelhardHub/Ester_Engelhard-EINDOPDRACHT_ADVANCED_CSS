@@ -1,0 +1,105 @@
+@charset "UTF-8";
+.article3 {
+  grid-area: social_media_buttons;
+}
+
+.assignment_container {
+  position: fixed;
+  right: 8px;
+  bottom: 0;
+}
+
+.social-media {
+  margin-bottom: 100px;
+}
+.social-media__blog {
+  background-color: #e17b77;
+}
+.social-media__blog::before {
+  content: "";
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  font-size: 30px;
+  margin: 0 19px;
+}
+.social-media__facebook {
+  background-color: #3b5998;
+}
+.social-media__facebook::before {
+  content: "";
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: white;
+  font-size: 30px;
+  margin: 0 28px;
+}
+.social-media__twitter {
+  background-color: #00aced;
+}
+.social-media__twitter::before {
+  content: "";
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: white;
+  font-size: 30px;
+  margin: 0 23px;
+}
+.social-media__github {
+  background-color: #333;
+}
+.social-media__github::before {
+  content: "";
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: white;
+  font-size: 30px;
+  margin: 0 23px;
+}
+.social-media__linkedin {
+  background-color: #007bb6;
+}
+.social-media__linkedin::before {
+  content: "";
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: white;
+  font-size: 30px;
+  margin: 0 25px;
+}
+
+.social-media {
+  direction: rtl;
+}
+
+.social-media > * {
+  direction: ltr;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75px;
+  height: 60px;
+  overflow: hidden;
+  -webkit-transition: width, 500ms;
+  transition: width, 500ms;
+}
+.buttons:hover {
+  width: 300px;
+}
+
+.buttons a {
+  color: white;
+  font-size: 20px;
+  white-space: nowrap;
+}/*# sourceMappingURL=media_buttons.css.map */

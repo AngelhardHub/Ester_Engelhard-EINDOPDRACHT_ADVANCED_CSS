@@ -1,0 +1,335 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+.testimonial {
+  grid-area: testimonial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0px;
+  max-width: 400px;
+  max-height: 425px;
+}
+
+.main {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 90%;
+  height: 275px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 11px 19px 3px #999799;
+  box-shadow: 1px 11px 19px 3px #999799;
+}
+.main__p {
+  margin: 10%;
+  line-height: 35px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #696767;
+}
+
+.footer {
+  width: 90%;
+  height: 150px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #686de0;
+  text-align: center;
+  -webkit-box-shadow: 1px 11px 19px 3px #999799;
+  box-shadow: 1px 11px 19px 3px #999799;
+}
+.footer__img img {
+  position: relative;
+  height: 100px;
+  border: 5px solid #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 50px;
+}
+.footer__text {
+  position: relative;
+  color: #fff;
+  bottom: 50px;
+  font-family: "Hind Vadodara", sans-serif;
+  letter-spacing: 1px;
+}
+.footer__text h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer__text p {
+  margin: 0;
+  padding: 0;
+  color: #c0c3eb;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+/*Assignment 2:
+Grid testimonials code for assignment 2 is located in the __testimonial file.*/
+.article2 {
+  grid-area: testimonial_grid;
+}
+
+.testimonial_grid_container {
+  display: grid;
+  background-color: #c3cfe2;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-areas: "testimomial1 testimomial1 testimomial1" "testimomial2 testimomial2 testimomial2" "testimomial3 testimomial3 testimomial3" "testimomial4 testimomial4 testimomial4" "testimomial5 testimomial5 testimomial5" "testimomial6 testimomial6 testimomial6" "testimomial7 testimomial7 test7imomial";
+}
+
+.testimonial1 {
+  grid-area: testimomial1;
+}
+
+.testimonial2 {
+  grid-area: testimomial2;
+}
+
+.testimonial3 {
+  grid-area: testimomial3;
+}
+
+.testimonial4 {
+  grid-area: testimomial4;
+}
+
+.testimonial5 {
+  grid-area: testimomial5;
+}
+
+.testimonial6 {
+  grid-area: testimomial6;
+}
+
+.testimonial7 {
+  grid-area: testimomial7;
+}
+
+button {
+  display: none;
+}
+
+.main,
+.footer {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-property: background;
+  transition-property: background;
+}
+
+.testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover {
+  position: relative;
+}
+.testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover p {
+  color: #464442;
+}
+.testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover .main {
+  background: #464442;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover img {
+  opacity: 0;
+}
+.testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover .footer {
+  background: #464442;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover .footer h1 {
+  color: #464442;
+}
+.testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover button {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 40%;
+}
+
+.article3 {
+  grid-area: social_media_buttons;
+}
+
+.assignment_container {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.social-media {
+  margin-bottom: 100px;
+}
+.social-media__blog {
+  background-color: #e17b77;
+}
+.social-media__blog::before {
+  content: "";
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: white;
+  font-size: 30px;
+  margin: 0 19px;
+}
+.social-media__facebook {
+  background-color: #3b5998;
+}
+.social-media__facebook::before {
+  content: "";
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: white;
+  font-size: 30px;
+  margin: 0 28px;
+}
+.social-media__twitter {
+  background-color: #00aced;
+}
+.social-media__twitter::before {
+  content: "";
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: white;
+  font-size: 30px;
+  margin: 0 23px;
+}
+.social-media__github {
+  background-color: #333;
+}
+.social-media__github::before {
+  content: "";
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: white;
+  font-size: 30px;
+  margin: 0 23px;
+}
+.social-media__linkedin {
+  background-color: #007bb6;
+}
+.social-media__linkedin::before {
+  content: "";
+  display: inline-block;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+  color: white;
+  font-size: 30px;
+  margin: 0 25px;
+}
+
+.social-media {
+  direction: rtl;
+}
+
+.social-media > * {
+  direction: ltr;
+}
+
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 75px;
+  height: 60px;
+  overflow: hidden;
+  -webkit-transition: width, 500ms;
+  transition: width, 500ms;
+}
+.buttons:hover {
+  width: 300px;
+}
+
+.buttons a {
+  color: white;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+body {
+  background-color: #c3cfe2;
+  min-width: 400px;
+}
+
+.gridcontainer_eindopdracht {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "testimonial" "testimonial_grid" "social_media_buttons";
+}
+
+article[class^=article]:not(.article3) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial_grid_container {
+    grid-template-areas: "testimomial1 testimomial2 ." "testimomial3 testimomial4 ." "testimomial5 testimomial6 ." "testimomial7 . ." ". . ." ". . ." ". . .";
+  }
+
+  .testimonial {
+    width: 95%;
+    height: 95%;
+    min-width: 380px;
+    height: auto;
+  }
+
+  .testimonial_grid_container div[class^=testimonial]:not(.testimonial1) p,
+.article2 .testimonial1 p {
+    font-size: 19px;
+  }
+  .testimonial_grid_container div[class^=testimonial]:not(.testimonial1) h1,
+.article2 .testimonial1 h1 {
+    font-size: 19px;
+  }
+
+  .testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover button {
+    left: 38.75%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .testimonial_grid_container {
+    grid-template-areas: "testimomial1 testimomial2 testimomial3" "testimomial4 testimomial5 testimomial6" "testimomial7 . ." ". . ." ". . ." ". . ." ". . .";
+  }
+
+  .testimonial {
+    min-width: 360px;
+    width: 90%;
+    height: 90%;
+  }
+
+  .testimonial_grid_container div[class^=testimonial]:not(.testimonial1) p,
+.article2 .testimonial1 p {
+    font-size: 18px;
+  }
+  .testimonial_grid_container div[class^=testimonial]:not(.testimonial1) h1,
+.article2 .testimonial1 h1 {
+    font-size: 18px;
+  }
+
+  .testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover button {
+    left: 38%;
+  }
+}/*# sourceMappingURL=main.css.map */

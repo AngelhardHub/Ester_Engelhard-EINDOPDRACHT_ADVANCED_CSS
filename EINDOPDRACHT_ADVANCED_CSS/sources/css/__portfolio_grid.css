@@ -1,0 +1,80 @@
+.article2 {
+  grid-area: testimonial_grid;
+}
+
+.testimonial_grid_container {
+  display: grid;
+  background-color: #c3cfe2;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-areas: "testimomial1 testimomial1 testimomial1" "testimomial2 testimomial2 testimomial2" "testimomial3 testimomial3 testimomial3" "testimomial4 testimomial4 testimomial4" "testimomial5 testimomial5 testimomial5" "testimomial6 testimomial6 testimomial6" "testimomial7 testimomial7 test7imomial";
+}
+
+.testimonial1 {
+  grid-area: testimomial1;
+}
+
+.testimonial2 {
+  grid-area: testimomial2;
+}
+
+.testimonial3 {
+  grid-area: testimomial3;
+}
+
+.testimonial4 {
+  grid-area: testimomial4;
+}
+
+.testimonial5 {
+  grid-area: testimomial5;
+}
+
+.testimonial6 {
+  grid-area: testimomial6;
+}
+
+.testimonial7 {
+  grid-area: testimomial7;
+}
+
+button {
+  display: none;
+}
+
+.main,
+.footer {
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-property: background;
+  transition-property: background;
+}
+
+.testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover {
+  position: relative;
+}
+.testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover p {
+  color: #464442;
+}
+.testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover .main {
+  background: #464442;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover img {
+  opacity: 0;
+}
+.testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover .footer {
+  background: #464442;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover .footer h1 {
+  color: #464442;
+}
+.testimonial_grid_container div[class^=testimonial]:not(.testimonial1):hover button {
+  position: absolute;
+  display: inline-block;
+  top: 50%;
+  left: 40%;
+}/*# sourceMappingURL=portfolio_grid.css.map */

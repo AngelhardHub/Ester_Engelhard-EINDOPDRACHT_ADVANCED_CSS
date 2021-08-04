@@ -1,0 +1,53 @@
+@import "__var_mixins";
+
+/*Assignment 2:
+Grid testimonials code for assignment 2 is located in the __testimonial file.*/
+.article2 {
+    grid-area: testimonial_grid;
+}
+.testimonial_grid_container {
+    display: grid;
+    background-color: #c3cfe2;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto auto auto;
+    grid-template-areas:
+        "testimomial1 testimomial1 testimomial1"
+        "testimomial2 testimomial2 testimomial2" 
+        "testimomial3 testimomial3 testimomial3"
+        "testimomial4 testimomial4 testimomial4"
+        "testimomial5 testimomial5 testimomial5"
+        "testimomial6 testimomial6 testimomial6"
+        "testimomial7 testimomial7 test7imomial";
+}
+.testimonial1 {
+    grid-area: testimomial1;
+}
+.testimonial2 {
+    grid-area: testimomial2;
+}
+.testimonial3 {
+    grid-area: testimomial3;
+}
+.testimonial4 {
+    grid-area: testimomial4;
+}
+.testimonial5 {
+    grid-area: testimomial5;
+}
+.testimonial6 {
+    grid-area: testimomial6;
+}
+.testimonial7 {
+    grid-area: testimomial7;
+}
+button {
+    display: none;
+}
+.main,
+.footer {
+    transition-duration: 500ms;
+    transition-property: background;
+}
+.testimonial_grid_container div[class^="testimonial"]:not(.testimonial1):hover {
+    @include hover_effect; 
+}

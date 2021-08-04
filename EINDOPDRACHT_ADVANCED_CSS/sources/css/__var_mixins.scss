@@ -1,0 +1,53 @@
+//variables
+//assignment 1 & 2 testimonial & portfolio grid:
+$radius: 15px;
+$testimonial_width: 100%-10%;
+$main_background: #fff;
+$hover_color: rgb(70, 68, 66);
+
+//assignment 3 media buttons:
+$button_content_color: white;
+
+//mixins
+//assignment 1 & 2 testimonial & portfolio grid:
+@mixin boxshadow() {
+    -webkit-box-shadow: 1px 11px 19px 3px rgba(153,151,153,1);
+    -moz-box-shadow: 1px 11px 19px 3px rgba(153,151,153,1);
+    box-shadow: 1px 11px 19px 3px rgba(153,151,153,1);
+}
+@mixin hover_effect() {
+    position: relative;
+    p {
+        color: $hover_color;
+    }
+    .main {
+        background: $hover_color;
+        box-shadow: none;
+    }
+    img {
+       opacity: 0;
+    }
+    .footer {
+        background: $hover_color;
+        box-shadow: none;
+        h1 {
+            color: $hover_color;
+        }
+    }
+    button {
+        position: absolute;
+        display: inline-block;
+        top:50%; 
+        left:40%;
+    } 
+}  
+
+//assignment 3 media buttons:
+@mixin icon_styles ($font_awsome:"Font Awesome 5 Brands", $weight: 400) {
+    display: inline-block;
+    font-family: $font_awsome;
+    font-weight: $weight;
+    color:$button_content_color;
+    font-size: 30px;
+}
+

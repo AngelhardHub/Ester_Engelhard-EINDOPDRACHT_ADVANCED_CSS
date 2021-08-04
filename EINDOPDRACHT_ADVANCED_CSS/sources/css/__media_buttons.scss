@@ -1,0 +1,76 @@
+@import "__var_mixins";
+
+//Assignment 3:
+.article3 {
+    grid-area: social_media_buttons;
+}
+.assignment_container {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.social-media {
+    margin-bottom: 100px;
+    &__blog {
+        background-color: #e17b77;
+        &::before {
+            content: "\f5fc";
+            @include icon_styles("Font Awesome 5 Free", 900); 
+            margin: 0 19px;
+        }
+    }
+    &__facebook {
+        background-color: #3b5998;
+        &::before {
+            content: "\f39e";
+            @include icon_styles; 
+            margin: 0 28px;
+        }
+    }
+    &__twitter {
+        background-color: #00aced;
+        &::before {
+            content: "\f099";
+            @include icon_styles;
+            margin: 0 23px;
+        }
+    }
+    &__github {
+        background-color: #333;
+        &::before {
+            content: "\f09b";
+            @include icon_styles;
+            margin: 0 23px;
+        }
+    }
+    &__linkedin {
+        background-color: #007bb6;
+        &::before {
+            content: "\f0e1";
+            @include icon_styles;
+            margin: 0 25px;
+        }
+    }
+}
+.social-media {
+    direction: rtl;
+}
+  .social-media > * {
+    direction: ltr;
+} 
+.buttons {
+    display: flex;
+    align-items: center;
+    width: 75px;
+    height: 60px;
+    overflow: hidden;
+    transition: width, 500ms;
+    &:hover {
+        width: 300px;
+    }
+}
+.buttons a {
+    color: $button_content_color;
+    font-size: 20px;
+    white-space: nowrap;
+}

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import "__testimonial";
+@import "__portfolio_grid";
+@import "__media_buttons";
+
+// main layout:
+body {
+    background-color: #c3cfe2;
+    min-width: 400px;
+}
+.gridcontainer_eindopdracht {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        "testimonial"
+        "testimonial_grid" 
+        "social_media_buttons";
+}
+article[class^=article]:not(.article3) {
+    display: flex;
+    justify-content: center;
+}
+
+//Makes portfolio_grid responsive:
+@media screen and (min-width: 768px) {
+    .testimonial_grid_container {
+        grid-template-areas:
+            "testimomial1 testimomial2 ."
+            "testimomial3 testimomial4 ." 
+            "testimomial5 testimomial6 ."
+            "testimomial7 . ."
+            ". . ."
+            ". . ."
+            ". . .";
+    }
+    .testimonial { 
+        width: 95%;
+        height: 95%;
+        min-width: 380px; 
+        height: auto;
+    }
+    .testimonial_grid_container div[class^="testimonial"]:not(.testimonial1),
+    .article2 .testimonial1 {
+        p {
+            font-size: 19px;
+        }
+        h1 {
+            font-size: 19px; 
+        }
+    }
+    .testimonial_grid_container div[class^="testimonial"]:not(.testimonial1):hover {
+        button {
+            left: 38.75%;
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .testimonial_grid_container {
+        grid-template-areas:
+            "testimomial1 testimomial2 testimomial3"
+            "testimomial4 testimomial5 testimomial6" 
+            "testimomial7 . ."
+            ". . ."
+            ". . ."
+            ". . ."
+            ". . .";
+    }  
+    .testimonial { 
+        min-width: 360px;
+        width: 90%; 
+        height: 90%;
+    }
+    .testimonial_grid_container div[class^="testimonial"]:not(.testimonial1),
+    .article2 .testimonial1 {
+        p {
+            font-size: 18px;
+        }
+        h1 {
+            font-size: 18px; 
+        }
+    }
+    .testimonial_grid_container div[class^="testimonial"]:not(.testimonial1):hover {
+        button {
+            left: 38%;
+        }
+    }
+}

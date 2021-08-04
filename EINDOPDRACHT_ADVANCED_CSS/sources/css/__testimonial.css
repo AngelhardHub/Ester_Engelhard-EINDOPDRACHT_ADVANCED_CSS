@@ -1,0 +1,73 @@
+.testimonial {
+  grid-area: testimonial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 20px 0px;
+  max-width: 400px;
+  max-height: 425px;
+}
+
+.main {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  width: 90%;
+  height: 275px;
+  background-color: #fff;
+  -webkit-box-shadow: 1px 11px 19px 3px #999799;
+  box-shadow: 1px 11px 19px 3px #999799;
+}
+.main__p {
+  margin: 10%;
+  line-height: 35px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: #696767;
+}
+
+.footer {
+  width: 90%;
+  height: 150px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #686de0;
+  text-align: center;
+  -webkit-box-shadow: 1px 11px 19px 3px #999799;
+  box-shadow: 1px 11px 19px 3px #999799;
+}
+.footer__img img {
+  position: relative;
+  height: 100px;
+  border: 5px solid #fff;
+  background-color: #fff;
+  border-radius: 50%;
+  bottom: 50px;
+}
+.footer__text {
+  position: relative;
+  color: #fff;
+  bottom: 50px;
+  font-family: "Hind Vadodara", sans-serif;
+  letter-spacing: 1px;
+}
+.footer__text h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-weight: 500;
+}
+.footer__text p {
+  margin: 0;
+  padding: 0;
+  color: #c0c3eb;
+  font-weight: 600;
+  font-size: 17px;
+}/*# sourceMappingURL=testimonial.css.map */
